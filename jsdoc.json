@@ -1,0 +1,30 @@
+{
+    "tags": {
+        "allowUnknownTags": false
+    },
+    "source": {
+        "include": [
+            "web-app/common/Cyclic_Automata.js",
+            "web-app/server/Cyclic_Automata.tests.js"
+        ],
+        "includePattern": "\\.js$",
+        "excludePattern": "(node_modules/|docs)"
+    },
+    "plugins": [
+        "plugins/markdown"
+    ],
+    "opts": {
+        "template": "node_modules/docdash",
+        "encoding": "utf8",
+        "destination": "docs/",
+        "recurse": true,
+        "verbose": true
+    },
+    "templates": {
+        "cleverLinks": true,
+        "monospaceLinks": false
+    },
+    "docdash": {
+        "collapse": false
+    }
+}
